@@ -1,0 +1,38 @@
+/*
+|--------------------------------------------------------------------------
+| lang
+|--------------------------------------------------------------------------
+*/
+
+.lang {
+    @include rem('margin-left', 55px);
+
+    @include media-breakpoint-down(sm) {
+        margin: 0;
+    }
+
+    &__link {
+        @include rem('font-size', 18px);
+        font-weight: 500;
+        color: #D5D5E2;
+        width: 40px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        @include rem('margin-left', 10px);
+        border: 2px solid transparent;
+        border-radius: 50%;
+
+        &:hover,
+        &:focus {
+            color: $black;
+            text-decoration: none;
+        }
+
+        &.-active {
+            border-color: $black;
+            color: $black;
+        }
+    }
+}

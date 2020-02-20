@@ -1,0 +1,51 @@
+/*
+|--------------------------------------------------------------------------
+| vacancy-list
+|--------------------------------------------------------------------------
+*/
+
+.vacancy-list {
+    @include rem('padding', 160px 0 0);
+    background: url("../img/general/wave_11.svg") top right no-repeat;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 160px 0 0);
+    }
+
+    &__item {
+        display: block;
+        @include rem('padding', 25px 40px);
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+        @include transition(.5s);
+
+        @include media-breakpoint-down(sm) {
+            @include rem('padding', 20px 15px);
+        }
+
+        &:hover,
+        &:focus {
+            background: linear-gradient(90deg, #3FA7E6 7.06%, #69C7FF 72.51%);
+            text-decoration: none;
+            border-top-color: $blue;
+
+            .vacancy-list__title {
+                color: #fff;
+            }
+
+            .vacancy-list__text {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }
+    }
+
+    &__title {
+        @include rem('font-size', 18px);
+        font-weight: 600;
+        color: #000;
+    }
+
+    &__text {
+        @include rem('font-size', 18px);
+        color: rgba(0, 0, 0, 0.5);
+    }
+}

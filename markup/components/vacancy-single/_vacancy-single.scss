@@ -1,0 +1,55 @@
+/*
+|--------------------------------------------------------------------------
+| vacancy-single
+|--------------------------------------------------------------------------
+*/
+
+.vacancy-single {
+    @include rem('padding', 160px 0 0);
+    background: url("../img/general/wave_11.svg") top right no-repeat;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 160px 0 0);
+    }
+
+    &__item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        @include rem('padding', 50px 0);
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            border: none;
+        }
+    }
+
+    &__title {
+        @include rem('font-size', 18px);
+        font-weight: 600;
+        color: #000;
+    }
+
+    &__text {
+        ul {
+            @include nl();
+
+            li {
+                position: relative;
+                @include rem('padding-left', 45px);
+                @include rem('margin-bottom', 10px);
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                    width: 24px;
+                    height: 1px;
+                    background: $blue;
+                }
+            }
+        }
+    }
+}

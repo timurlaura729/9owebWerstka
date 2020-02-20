@@ -1,0 +1,161 @@
+/*
+|--------------------------------------------------------------------------
+| works
+|--------------------------------------------------------------------------
+*/
+
+.works {
+    position: relative;
+    background: url("../img/general/wave_3.svg") top right 12% no-repeat;
+    background-size: 64%;
+
+    @include media-breakpoint-down(sm) {
+        background-size: contain;
+        background: none;
+    }
+
+    &__slider {
+        position: relative;
+
+        .swiper-container {
+            width: 80%;
+            padding: 15px 0;
+
+            @include media-breakpoint-down(lg) {
+                width: 70%;
+            }
+
+            @include media-breakpoint-down(md) {
+                width: 80%;
+            }
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__slider-controls {
+
+    }
+
+    &__slider-control {
+        @include center(vertical);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: none;
+        cursor: pointer;
+        @include transition(.3s);
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+        }
+
+        &.-prev {
+            left: 50px;
+            background-image: url("../img/general/ic_angle_left.svg");
+
+            @include media-breakpoint-down(md) {
+                left: 0;
+            }
+        }
+
+        &.-next {
+            right: 50px;
+            background-image: url("../img/general/ic_angle_right.svg");
+
+            @include media-breakpoint-down(md) {
+                right: 0;
+            }
+        }
+    }
+
+    &__item {
+        height: 380px;
+        width: 260px;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+        @include rem('padding', 25px);
+        display: block;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+        @include media-breakpoint-down(xs) {
+            width: 100%;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.35);
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #1D262D 28.63%, rgba(56, 62, 68, 0) 56.54%);
+            opacity: 0.5;
+            border-radius: 10px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 100%;
+    }
+
+    &__header {
+        margin-top: auto;
+    }
+
+    &__title {
+        @include rem('font-size', 18px);
+        font-weight: 500;
+        color: #fff;
+    }
+
+    &__desc {
+        color: #fff;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 4px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $blue;
+        }
+    }
+}

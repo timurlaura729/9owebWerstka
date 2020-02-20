@@ -1,0 +1,129 @@
+/*
+|--------------------------------------------------------------------------
+| blog
+|--------------------------------------------------------------------------
+*/
+
+.blog {
+    @include rem('padding', 160px 0 0);
+    background: url("../img/general/wave_11.svg") top right no-repeat;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 160px 0 0);
+    }
+
+    .section-header {
+        display: flex;
+        align-items: center;
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
+
+    &__links {
+        margin-left: auto;
+
+        @include media-breakpoint-down(sm) {
+            @include rem('margin', 20px 0 0 0)
+        }
+    }
+
+    &__link {
+        color: $blue;
+        font-weight: 500;
+        border-bottom: 1px solid $blue;
+        border-radius: 0;
+        padding: 0;
+        @include rem('margin-left', 50px);
+        min-height: auto;
+        box-shadow: none !important;
+
+        @include media-breakpoint-down(sm) {
+            @include rem('margin', 20px 15px 0);
+        }
+
+        &:hover,
+        &:focus,
+        &.-active {
+            color: $black;
+            border-bottom: transparent;
+        }
+    }
+
+    &__card {
+        position: relative;
+        display: block;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+
+    &__card-img {
+        display: block;
+        width: 100%;
+    }
+
+    &__card-desc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        @include rem('padding', 35px 50px);
+
+        @include media-breakpoint-down(md) {
+            position: static;
+            @include rem('padding', 25px 0);
+        }
+    }
+
+    &__card-date {
+        font-weight: 300;
+        color: #fff;
+        @include rem('font-size', 12px);
+
+        @include media-breakpoint-down(md) {
+            color: $black;
+        }
+    }
+
+    &__card-title {
+        @include rem('font-size', 24px);
+        color: #fff;
+        @include rem('margin', 15px 0);
+
+        @include media-breakpoint-down(md) {
+            color: $black;
+            @include rem('font-size', 20px);
+        }
+    }
+
+    &__card-category {
+        @include rem('font-size', 12px);
+        color: #fff;
+        @include rem('border-radius', 32px);
+        border: 1px solid #fff;
+        @include rem('padding', 7px 25px);
+
+        @include media-breakpoint-down(md) {
+            color: $black;
+            border: 1px solid $black;
+        }
+    }
+}

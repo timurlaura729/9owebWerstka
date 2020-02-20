@@ -1,0 +1,48 @@
+/*
+|--------------------------------------------------------------------------
+| breadcrumb
+|--------------------------------------------------------------------------
+*/
+
+.breadcrumbs {
+    @include nl();
+    position: relative;
+    background: none;
+    display: block;
+
+    &__item {
+        display: inline-block;
+        position: relative;
+        margin-right: 5px;
+
+        &:before {
+            font-family: 'FontAwesome';
+            @include rem('font-size', 13px);
+            color: rgba(0, 0, 0, 0.6);
+            content: '\f105';
+            display: inline-block;
+            vertical-align: middle;
+            margin: -1px 1px 0 0;
+        }
+
+        &:first-child:before {
+            display: none
+        }
+
+        &.-active {
+            color: #616261;
+        }
+    }
+
+    &__link,
+    &__item {
+        @include rem('font-size', 13px);
+        color: rgba(0, 0, 0, 0.6);
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+/*
+|--------------------------------------------------------------------------
+| paginator
+|--------------------------------------------------------------------------
+*/
+
+.paginator {
+    @include nl();
+
+    &__item {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 2px;
+
+        &.-disabled {
+            display: none
+        }
+
+		&.-active {
+
+			.paginator__link {
+				background: $blue;
+				color: #fff;
+
+				&:hover,
+				&:focus {
+					color: #fff;
+					opacity: 1;
+				}
+			}
+		}
+    }
+
+    &__link {
+        @include rem('font-size', 14px);
+        font-weight: 600;
+        color: $black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        @include rem('border-radius', 3px);
+        background-color: rgba(0, 0, 0, 0.03);
+
+        &:hover,
+        &:focus {
+            opacity: .8;
+            text-decoration: none;
+            color: $black;
+        }
+    }
+}

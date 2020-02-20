@@ -1,0 +1,28 @@
+/*
+|--------------------------------------------------------------------------
+| features
+|--------------------------------------------------------------------------
+*/
+
+.features {
+
+    &__list {
+
+    }
+
+    &__item {
+
+    }
+
+    &__title {
+        @include rem('font-size', 24px);
+        font-weight: 600;
+        border-bottom: 2px solid $blue;
+        @include rem('padding-bottom', 15px);
+        @include rem('margin-bottom', 20px);
+    }
+
+    p {
+        @include rem('margin-bottom', 20px);
+    }
+}

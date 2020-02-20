@@ -1,0 +1,128 @@
+/*
+|--------------------------------------------------------------------------
+| Common styles
+|--------------------------------------------------------------------------
+*/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'GothamPro', sans-serif;
+    font-size: 14px;
+    color: #383E44;
+    line-height: 1.42857143;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    direction: ltr;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/*
+|--------------------------------------------------------------------------
+| inputs reset
+|--------------------------------------------------------------------------
+*/
+
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"]{
+    box-sizing: border-box;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    outline: 0;
+    margin: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Responsive default Images & Other Objects
+|--------------------------------------------------------------------------
+*/
+
+img, object, embed {
+    max-width: 100%;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+*/
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    @include rem('margin', 0 0 20px);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+h1, .h1 {
+    @include rem('font-size', 36px);
+}
+
+h2, .h2 {
+    @include rem('font-size', 24px);
+}
+
+h3, .h3 {
+    @include rem('font-size', 18px);
+    font-weight: 500;
+}
+
+h4, .h4 {
+    @include rem('font-size', 17px);
+    font-weight: 500;
+}
+
+h5, .h5 {
+    @include rem('font-size', 14px);
+}
+
+h6, .h6 {
+    @include rem('font-size', 12px);
+}
+
+/*
+|--------------------------------------------------------------------------
+| Scrollbar styling
+|--------------------------------------------------------------------------
+*/
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    background-color: #e4e8f5;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #b0bec5;
+    border-radius: 10px;
+    width: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5c5c5c;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Styling links
+|--------------------------------------------------------------------------
+*/
+
+a {
+    color: $blue;
+    text-decoration: none;
+    @include transition(.1s);
+
+    &:hover,
+    &:focus {
+        color: darken($blue, 10%);
+    }
+}
+

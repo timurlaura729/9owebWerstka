@@ -1,0 +1,124 @@
+/*
+|--------------------------------------------------------------------------
+| forms
+|--------------------------------------------------------------------------
+*/
+
+@import 'radio-buttons';
+@import 'checkboxes';
+@import 'switches';
+
+.has-warning {
+    border-color: $red !important;
+}
+
+.form {
+    text-align: center;
+    background: #fff;
+    padding: 40px 35px;
+
+    &__title {
+        color: #000;
+        @include rem('font-size', 18px);
+        text-transform: uppercase;
+    }
+
+    &__button {
+        min-height: 60px;
+        width: 100%;
+    }
+}
+
+.control {
+    margin-bottom: 15px;
+
+    &.has-error {
+
+        input,
+        textarea {
+            border-bottom: 1px solid $red !important;
+        }
+
+        .control__help {
+            display: block;
+        }
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-family: inherit;
+        font-size: .9rem;
+        line-height: 1.5;
+        color: #000;
+        min-height: 45px;
+        background-color: #fff;
+        background-image: none;
+        background-clip: padding-box;
+        border: 1px solid #d0d0d0;
+        border-radius: 32px;
+        transition: all .1s ease-in;
+        -webkit-appearance: none;
+
+        &:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: $green;
+            outline: none;
+        }
+
+        &_textarea {
+            min-height: 150px;
+        }
+    }
+
+    &__help {
+        color: $red;
+        margin-top: .5rem;
+        text-align: left;
+        display: none;
+    }
+}
+
+.file-uploader {
+    color: #D5D5E2;
+
+    &__label {
+        @include rem('font-size', 18px);
+        font-weight: normal;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin: 0;
+
+        &:before {
+            content: '';
+            margin-right: 22px;
+            background: url("../img/general/ic_attach.svg") no-repeat;
+            width: 27px;
+            height: 35px;
+        }
+    }
+
+    input[type=file] {
+
+        // Needed to override webkit button
+        &::-webkit-file-upload-button {
+            display: none;
+        }
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        cursor: pointer;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}

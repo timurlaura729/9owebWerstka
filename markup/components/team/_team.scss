@@ -1,0 +1,99 @@
+/*
+|--------------------------------------------------------------------------
+| team
+|--------------------------------------------------------------------------
+*/
+
+.team {
+    @include rem('padding', 250px 0 0);
+    background: url("../img/general/wave_1.svg") top right no-repeat;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 180px 0 0);
+    }
+
+    @include media-breakpoint-down(sm) {
+        background-size: contain;
+    }
+
+    &__list {
+
+        @include media-breakpoint-down(sm) {
+            display: none;
+        }
+    }
+
+    &__card {
+        position: relative;
+        @include rem('border-radius', 12px);
+        overflow: hidden;
+
+        @include media-breakpoint-up(sm) {
+            height: 170px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, #3497D2 0%, rgba(52, 151, 210, 0) 49.72%);
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+        font-family: 'object-fit: cover; object-position: center 20%'; // ie
+    }
+
+    &__desc {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include rem('padding', 15px)
+    }
+
+    &__name {
+        @include rem('font-size', 16px);
+        color: #fff;
+        font-weight: 600;
+    }
+
+    &__position {
+        color: #fff;
+    }
+
+    &__slider {
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 4px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $blue;
+        }
+    }
+}

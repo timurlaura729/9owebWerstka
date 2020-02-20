@@ -1,0 +1,83 @@
+/*
+|--------------------------------------------------------------------------
+| services
+|--------------------------------------------------------------------------
+*/
+
+.services {
+    @include rem('padding', 160px 0 100px);
+    background: url("../img/general/wave_11.svg") top right no-repeat;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 160px 0 55px);
+    }
+
+    &__tabs {
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+            @include rem('margin-bottom', 40px)
+        }
+    }
+
+    &__tabs-item {
+        @include rem('margin-bottom', 30px);
+        width: 100%;
+
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__tabs-link {
+        @include rem('font-size', 15px);
+        color: #383E44;
+        font-weight: 500;
+        display: block;
+
+        @include media-breakpoint-down(sm) {
+            @include rem('padding', 12px 15px);
+            text-align: center;
+        }
+
+        &:hover,
+        &:focus,
+        &.active {
+            text-decoration: none;
+            color: $blue;
+
+            @include media-breakpoint-down(sm) {
+                color: #fff;
+                background: $blue;
+            }
+        }
+    }
+
+    &__body {
+        max-width: 450px;
+        width: 100%;
+        margin: 0 auto;
+
+        ul {
+            @include nl();
+            @include rem('margin', 40px 0);
+
+            li {
+                position: relative;
+                @include rem('padding-left', 45px);
+                @include rem('margin-bottom', 10px);
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                    width: 24px;
+                    height: 1px;
+                    background: $blue;
+                }
+            }
+        }
+    }
+}

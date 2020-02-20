@@ -1,0 +1,82 @@
+/*
+|--------------------------------------------------------------------------
+| burger
+|--------------------------------------------------------------------------
+*/
+
+.burger {
+    -webkit-transition: all 0.2s ease-out;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background: $blue;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    position: relative;
+    outline: none !important;
+    box-shadow: 0 10px 10px rgba(52, 151, 210, 0.25);
+
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 50%;
+        margin-top: -25px;
+        left: 15px;
+    }
+
+    @include media-breakpoint-down(md) {
+        @include rem('margin-right', 20px)
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: none;
+    }
+
+    &.-open {
+
+        .burger__item {
+            height: 0;
+
+            &:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+                top: 50%;
+                left: 50%;
+            }
+
+            &:after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+                top: 50%;
+                left: 50%;
+            }
+        }
+    }
+
+    &__item {
+        @include center(both);
+        width: 20px;
+        height: 2px;
+        background: #fff;
+        border-radius: 32px;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 20px;
+            height: 2px;
+            background: #fff;
+            border-radius: 32px;
+            -webkit-transition: all 0.2s ease-out;
+        }
+
+        &:before {
+            top: -7px;
+        }
+
+        &:after {
+            top: 7px;
+        }
+    }
+}

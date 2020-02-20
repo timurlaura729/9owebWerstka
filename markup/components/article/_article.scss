@@ -1,0 +1,97 @@
+/*
+|--------------------------------------------------------------------------
+| article
+|--------------------------------------------------------------------------
+*/
+
+.article {
+    @include rem('padding', 160px 0 0);
+    background: url("../img/general/wave_11.svg") top right no-repeat;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 160px 0 0);
+    }
+
+    &__cover {
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+
+            @include media-breakpoint-down(md) {
+                display: none;
+            }
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__desc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        @include rem('padding', 35px 50px);
+
+        @include media-breakpoint-down(md) {
+            position: static;
+            @include rem('padding', 25px 0);
+        }
+    }
+
+    &__date {
+        font-weight: 300;
+        color: #fff;
+        @include rem('font-size', 12px);
+
+        @include media-breakpoint-down(md) {
+            color: $black;
+        }
+    }
+
+    &__title {
+        @include rem('font-size', 34px);
+        font-weight: 500;
+        color: #fff;
+        @include rem('margin', 15px 0);
+        max-width: 500px;
+
+        @include media-breakpoint-down(md) {
+            color: $black;
+            @include rem('font-size', 24px);
+        }
+    }
+
+    &__category {
+        @include rem('font-size', 12px);
+        color: #fff;
+        @include rem('border-radius', 32px);
+        border: 1px solid #fff;
+        @include rem('padding', 7px 25px);
+
+        @include media-breakpoint-down(md) {
+            color: $black;
+            border: 1px solid $black;
+        }
+    }
+
+    &__text {
+        @include rem('padding', 35px 0);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        @include rem('margin-bottom', 35px);
+    }
+}

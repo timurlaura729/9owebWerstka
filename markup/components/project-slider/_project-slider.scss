@@ -1,0 +1,117 @@
+/*
+|--------------------------------------------------------------------------
+| project-slider
+|--------------------------------------------------------------------------
+*/
+
+.project-slider {
+    @include rem('margin-top', 30px);
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+        margin-top: 0;
+    }
+
+    .swiper-container {
+
+        @include media-breakpoint-up(lg) {
+            @include rem('padding', 100px 0);
+        }
+
+        @include media-breakpoint-down(md) {
+            width: 90%;
+        }
+
+        @include media-breakpoint-down(xs) {
+            width: 95%;
+        }
+    }
+
+    .swiper-slide {
+
+        @include media-breakpoint-up(lg) {
+            opacity: .4;
+            @include transition(.3s);
+        }
+
+        &.swiper-slide-next {
+
+            @include media-breakpoint-up(lg) {
+                opacity: 1;
+                transform: scale(1.5);
+                z-index: 2;
+            }
+        }
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+        box-shadow: 0px 0.951779px 7.13834px rgba(75, 75, 75, 0.1);
+    }
+
+    &__controls {
+
+    }
+
+    &__control {
+        @include center(vertical);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: none;
+        cursor: pointer;
+        @include transition(.3s);
+        z-index: 3;
+
+        &:hover,
+        &:focus {
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+        }
+
+        &.-prev {
+            left: 50px;
+            background-image: url("../img/general/ic_angle_left.svg");
+
+            @include media-breakpoint-down(md) {
+                left: 25px;
+            }
+        }
+
+        &.-next {
+            right: 50px;
+            background-image: url("../img/general/ic_angle_right.svg");
+
+            @include media-breakpoint-down(md) {
+                right: 25px;
+            }
+        }
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: -30px;
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            margin: 0 4px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $blue;
+        }
+    }
+}

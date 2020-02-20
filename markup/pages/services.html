@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head}}
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Social Bar Begin -->
+        <div class="socialbar">
+            <a href="#" target="_blank" class="socialbar__link -tw">Twitter</a>
+            <a href="#" target="_blank" class="socialbar__link -fb">Facebook</a>
+            <a href="#" target="_blank" class="socialbar__link -insta">Instagram</a>
+        </div><!--/. Social Bar End -->
+
+    </div>
+
+    <!-- App Begin -->
+    <div class="app">
+
+        <!-- App Wrapper Begin -->
+        <div class="app__wrapper">
+
+            {{> header/header}}
+
+            <!-- App Main Begin -->
+            <main role="main" class="app__main">
+
+                <!-- Services Begin -->
+                <section class="services">
+                    <div class="container -offset">
+                        <div class="section-header text-center text-lg-left">
+                            <div class="section-header__title pb-0">Услуги</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <ul class="nav services__tabs" role="tablist">
+                                    <li class="services__tabs-item">
+                                        <a class="services__tabs-link active" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true">Digital продакшн</a>
+                                    </li>
+                                    <li class="services__tabs-item">
+                                        <a class="services__tabs-link" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false">Performance маркетинг</a>
+                                    </li>
+                                    <li class="services__tabs-item">
+                                        <a class="services__tabs-link" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false">Брендинг</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-9">
+                                <div class="services__body">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+                                            <p>Обеспечиваем всестороннюю поддержку вашего бизнеса в интернете.</p>
+                                            <ul>
+                                                <li>Техническая поддержка</li>
+                                                <li>Контентная поддержка проектов</li>
+                                                <li>Разработка баннеров и медиаконтента</li>
+                                                <li>24/7 мониторинг веб-проектов</li>
+                                            </ul>
+                                            <p>Считаем, что помимо качественного продукта важен и качественный сервис. Поэтому аббревиатуры NPS, SLA и NDA для нас не пустой звук.</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-2" role="tabpanel">
+
+                                        </div>
+                                        <div class="tab-pane fade" id="tab-3" role="tabpanel">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--/. Services End -->
+
+                <!-- Projects Begin -->
+                <div class="container -offset">
+                    <div class="section-header">
+                        <div class="section-header__title">Кейсы</div>
+                    </div>
+                    <div class="row" vertical-gutter="30">
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="projects__card">
+                                <a href="#" class="projects__img">
+                                    <img src="%=static=%img/content/work.jpg" alt="">
+                                </a>
+                                <div class="projects__desc">
+                                    <div class="projects__subtitle">Крома транс</div>
+                                    <a href="#" class="projects__title">Разработка сайта</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="projects__card">
+                                <a href="#" class="projects__img">
+                                    <img src="%=static=%img/content/work.jpg" alt="">
+                                </a>
+                                <div class="projects__desc">
+                                    <div class="projects__subtitle">Крома транс</div>
+                                    <a href="#" class="projects__title">Разработка сайта</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="projects__card">
+                                <a href="#" class="projects__img">
+                                    <img src="%=static=%img/content/work.jpg" alt="">
+                                </a>
+                                <div class="projects__desc">
+                                    <div class="projects__subtitle">Крома транс</div>
+                                    <a href="#" class="projects__title">Разработка сайта</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-xl-3">
+                            <div class="projects__card">
+                                <a href="#" class="projects__img">
+                                    <img src="%=static=%img/content/work.jpg" alt="">
+                                </a>
+                                <div class="projects__desc">
+                                    <div class="projects__subtitle">Крома транс</div>
+                                    <a href="#" class="projects__title">Разработка сайта</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--/. Projects End -->
+
+            </main><!--/. App Main End -->
+
+            {{> footer/footer}}
+
+        </div><!--/. App Wrapper End -->
+
+    </div><!--/. App End -->
+
+    {{> bottom/bottom}}
+
+</body>
+</html>

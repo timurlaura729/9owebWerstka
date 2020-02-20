@@ -1,0 +1,250 @@
+/*
+|--------------------------------------------------------------------------
+| project
+|--------------------------------------------------------------------------
+*/
+
+.project {
+    @include rem('padding', 160px 0 100px);
+    background: url("../img/general/wave_11.svg") top right no-repeat;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 160px 0 55px);
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        @include rem('margin-bottom', 25px);
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+    }
+
+    &__link {
+        @include rem('font-size', 18px);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $blue;
+        color: $black;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+
+        &:before {
+            content: '';
+            flex: 0 0 11px;
+            max-width: 11px;
+            width: 11px;
+            height: 11px;
+            background: url("../img/general/ic-link.svg");
+            @include rem('margin-right', 5px);
+        }
+    }
+
+    &__logo {
+        max-height: 50px;
+
+        @include media-breakpoint-down(sm) {
+            @include rem('margin-top', 25px);
+        }
+    }
+
+    &__img {
+        box-shadow: 0px 4px 30px rgba(75, 75, 75, 0.1);
+        @include rem('margin', 50px 0);
+
+        @include media-breakpoint-down(md) {
+            @include rem('margin', 20px 0);
+        }
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__mission {
+        @include rem('margin', 100px 0);
+        position: relative;
+
+        @include media-breakpoint-down(sm) {
+            @include rem('margin', 50px 0);
+        }
+
+        &:before {
+            content: '';
+            @include center(vertical);
+            left: 0;
+            width: 100%;
+            height: 800px;
+            background: url("../img/general/wave_12.svg") left center no-repeat;
+            z-index: -1;
+        }
+    }
+
+    &__mission-item {
+        border: 2px solid $blue;
+        box-shadow: 0 4px 30px rgba(75, 75, 75, 0.1);
+        @include rem('padding', 45px);
+        max-width: 375px;
+        background: #fff;
+
+        @include media-breakpoint-down(sm) {
+            max-width: none;
+            @include rem('padding', 35px 20px);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+
+        @include media-breakpoint-down(sm) {
+            @include rem('padding-bottom', 30px);
+            margin-bottom: 0;
+        }
+    }
+
+    &__desc {
+        @include rem('margin-top', 90px);
+
+        @include media-breakpoint-down(sm) {
+            @include rem('margin-top', 50px);
+        }
+    }
+
+    &__slider {
+        @include rem('padding', 60px 0);
+    }
+
+    &__item {
+        @include rem('padding', 60px 0);
+        border-bottom: 1px solid #D5D5E2;
+
+        &:first-child {
+            border-top: 1px solid #D5D5E2;
+        }
+
+        @include media-breakpoint-down(sm) {
+            @include rem('padding', 35px 0);
+        }
+
+        &.-no-border {
+            border-top: none;
+        }
+    }
+
+    &__solution {
+        @include rem('margin-bottom', 25px);
+        display: flex;
+        align-items: center;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__solution-icon {
+        flex: 0 0 40px;
+        max-width: 40px;
+        @include rem('margin-right', 25px);
+    }
+
+    &__tag {
+        @include rem('font-size', 13px);
+        font-weight: 300;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        border: 2px solid #D5D5E2;
+        line-height: 1;
+        @include rem('padding', 7px 20px);
+        box-shadow: 0px 4px 30px rgba(75, 75, 75, 0.02);
+        @include rem('margin', 0 25px 12px 0);
+
+        @include media-breakpoint-down(sm) {
+            @include rem('margin', 0 12px 12px 0);
+        }
+    }
+
+    &__review {
+        border: 2px solid $blue;
+        background: #fff;
+        box-shadow: 0 4px 30px rgba(75, 75, 75, 0.1);
+        @include rem('padding', 40px 25px);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__review-text {
+        position: relative;
+        @include rem('padding', 0 0 0 60px);
+
+        @include media-breakpoint-down(sm) {
+            @include rem('padding', 35px 0 0 0);
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 47px;
+            height: 47px;
+            background: url("../img/general/ic-quotes.svg") no-repeat;
+            background-size: 100%;
+
+            @include media-breakpoint-down(sm) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    &__review-author {
+        @include rem('padding', 20px 0 0 60px);
+        display: flex;
+        align-items: center;
+        order: 2;
+
+        @include media-breakpoint-down(sm) {
+            order: -1;
+            @include rem('padding', 0 0 20px);
+        }
+    }
+
+    &__review-ava {
+        max-width: 56px;
+        flex: 0 0 56px;
+    }
+
+    &__review-desc {
+        @include rem('padding-left', 15px);
+    }
+
+    &__review-name {
+        @include rem('font-size', 18px);
+        font-weight: 500;
+    }
+
+    &__position {
+        @include rem('font-size', 13px);
+        font-weight: 300;
+    }
+
+    &__team-position {
+        @include rem('font-size', 13px);
+        font-weight: 300;
+        color: #A1A1B1
+    }
+}

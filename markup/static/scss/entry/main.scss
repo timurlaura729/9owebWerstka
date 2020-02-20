@@ -1,0 +1,15 @@
+@import '../normalize.scss';
+
+// Plugins, which is used in current project.
+@import 'partials/_plugins.scss';
+
+// Libraries, which is used in current project.
+@import 'built-in-partials/_service.scss';
+
+// Plugins reset.
+@import '../plugins-reset.scss';
+
+// Components, which is used in current project.
+@import 'partials/_components.scss';
+
+

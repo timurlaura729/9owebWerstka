@@ -1,0 +1,57 @@
+/*
+|--------------------------------------------------------------------------
+| spoiler
+|--------------------------------------------------------------------------
+*/
+
+.spoiler {
+
+    p {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    &__inner {
+        overflow: hidden;
+        @include transition(1s);
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            height: 42px;
+            z-index: 2;
+            background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.99) 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to top, rgba(255, 255, 255, 0.99) 0%, rgba(255, 255, 255, 0) 100%);
+            @include transition();
+        }
+
+        &.-open {
+            max-height: none !important;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    &__more {
+        outline: none;
+        color: $aqua;
+        border: none;
+        background: none;
+        border-bottom: 1px dashed $aqua;
+        padding: 0;
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            color: $blue;
+            border-bottom: 1px dashed $blue;
+        }
+    }
+}

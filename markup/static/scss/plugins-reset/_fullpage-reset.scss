@@ -1,0 +1,36 @@
+#fp-nav ul li, .fp-slidesNav ul li {
+    margin: 0 0 5px
+}
+
+#fp-nav ul li .fp-tooltip {
+    opacity: 1;
+    width: auto;
+    right: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: #D5D5E2;
+    top: auto;
+    left: auto;
+}
+
+#fp-nav ul li:hover a span, .fp-slidesNav ul li:hover a span {
+    width: 13px;
+    height: 13px;
+    margin: -2px 0 0 -3px;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+    margin: -2px 0 0 -3px;
+    background: $blue;
+    width: 13px;
+    height: 13px;
+}

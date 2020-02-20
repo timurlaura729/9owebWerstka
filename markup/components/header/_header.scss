@@ -1,0 +1,67 @@
+/*
+|--------------------------------------------------------------------------
+| header
+|--------------------------------------------------------------------------
+*/
+
+.header {
+    @include rem('padding', 25px 0);
+    width: 100%;
+    @include transition(.3s);
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include media-breakpoint-down(sm) {
+        @include rem('padding', 15px 0);
+        box-shadow: 5px 1.66px 6px 0 rgba(103,103,103,.1);
+        background: #fff;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
+            @include rem('padding-left', 130px);
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    &__contacts {
+        @include rem('font-size', 18px);
+        font-weight: 600;
+        color: $black;
+        @include rem('margin-left', 75px);
+
+        @include media-breakpoint-down(lg) {
+            @include rem('margin-left', 45px);
+        }
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+
+        &:hover,
+        &:focus {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+
+    &__button {
+        @include rem('margin-left', 75px);
+        min-width: 200px;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+}

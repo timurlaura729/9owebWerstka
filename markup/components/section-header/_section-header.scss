@@ -1,0 +1,79 @@
+/*
+|--------------------------------------------------------------------------
+| section-header
+|--------------------------------------------------------------------------
+*/
+
+.section-header {
+    @include rem('padding-bottom', 55px);
+
+    @include media-breakpoint-down(sm) {
+        @include rem('padding-bottom', 35px);
+    }
+
+    &__back-link {
+        color: $black;
+        border-bottom: 1px solid $black;
+        position: relative;
+        @include rem('margin', 0 0 10px 55px);
+        display: inline-block;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $blue;
+            border-bottom-color: $blue;
+        }
+
+        &:before {
+            content: '';
+            @include center(vertical);
+            left: -55px;
+            width: 36px;
+            height: 8px;
+            background: url("../img/general/ic-long-arrow_left.svg");
+        }
+    }
+
+    &__title {
+        @include rem('font-size', 42px);
+        font-weight: 700;
+        color: $black;
+        line-height: 1.2;
+
+        @include media-breakpoint-down(md) {
+            @include rem('font-size', 32px);
+        }
+
+        @include media-breakpoint-down(sm) {
+
+        }
+    }
+
+    &__desc {
+        max-width: 450px;
+        @include rem('padding-top', 25px);
+
+        @include media-breakpoint-up(md) {
+            @include rem('padding', 10px 0 0 40px);
+        }
+    }
+
+    &__subtitle {
+        @include rem('font-size', 18px);
+        font-weight: 500;
+        @include rem('padding-bottom', 25px);
+        line-height: 24px;
+    }
+
+    &__text {
+        color: #383E44
+    }
+
+    &.-horizontal {
+
+        @include media-breakpoint-up(md) {
+            display: flex;
+        }
+    }
+}

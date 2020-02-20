@@ -1,0 +1,19 @@
+/*
+|--------------------------------------------------------------------------
+| logo
+|--------------------------------------------------------------------------
+*/
+
+.logo {
+    display: block;
+    text-indent: -9999px;
+    background: url("../img/general/logo.png") no-repeat;
+    background-size: 100%;
+    width: 105px;
+    height: 80px;
+
+    @include media-breakpoint-down(md) {
+        width: 75px;
+        height: 57px
+    }
+}

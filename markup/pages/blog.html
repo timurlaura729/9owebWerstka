@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    {{> head/head}}
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Social Bar Begin -->
+        <div class="socialbar">
+            <a href="#" target="_blank" class="socialbar__link -tw">Twitter</a>
+            <a href="#" target="_blank" class="socialbar__link -fb">Facebook</a>
+            <a href="#" target="_blank" class="socialbar__link -insta">Instagram</a>
+        </div><!--/. Social Bar End -->
+
+    </div>
+
+    <!-- App Begin -->
+    <div class="app">
+
+        <!-- App Wrapper Begin -->
+        <div class="app__wrapper">
+
+            {{> header/header}}
+
+            <!-- App Main Begin -->
+            <main role="main" class="app__main">
+
+                <!-- Blog Begin -->
+                <section class="blog">
+                    <div class="container -offset">
+                        <div class="section-header">
+                            <div class="section-header__title">Блог</div>
+                            <div class="blog__links">
+                                <button type="button" class="button blog__link -active">Все</button>
+                                <button type="button" class="button blog__link">Дизайн</button>
+                                <button type="button" class="button blog__link">Маркетинг</button>
+                                <button type="button" class="button blog__link">Маркетинг</button>
+                                <button type="button" class="button blog__link">Сми о нас</button>
+                            </div>
+                        </div>
+                        <div class="row" data-lg-gutter="60"  vertical-gutter="30" vertical-lg-gutter="60">
+                            <div class="col-md-6">
+                                <a href="#" class="blog__card">
+                                    <img src="%=static=%img/content/blog.png" class="blog__card-img" alt="">
+                                    <div class="blog__card-desc">
+                                        <div class="blog__card-date">13 января 2020</div>
+                                        <div class="blog__card-title">Как мы все-таки перевернули календарь</div>
+                                        <div class="blog__card-category">Дизайн</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="blog__card">
+                                    <img src="%=static=%img/content/blog.png" class="blog__card-img" alt="">
+                                    <div class="blog__card-desc">
+                                        <div class="blog__card-date">13 января 2020</div>
+                                        <div class="blog__card-title">Как мы все-таки перевернули календарь</div>
+                                        <div class="blog__card-category">Дизайн</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="blog__card">
+                                    <img src="%=static=%img/content/blog.png" class="blog__card-img" alt="">
+                                    <div class="blog__card-desc">
+                                        <div class="blog__card-date">13 января 2020</div>
+                                        <div class="blog__card-title">Как мы все-таки перевернули календарь</div>
+                                        <div class="blog__card-category">Дизайн</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="subscribe">
+                                    <div class="subscribe__title">Подпишитесь на нас</div>
+                                    <div class="subscribe__text">Иногда мы отправляем полезные и интересные новости digital рынка</div>
+                                    <form class="subscribe__form">
+                                        <input type="text" class="subscribe__input" placeholder="Введите E-Mail">
+                                        <button type="submit" class="subscribe__button"></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section><!--/. Blog End -->
+
+            </main><!--/. App Main End -->
+
+            {{> footer/footer}}
+
+        </div><!--/. App Wrapper End -->
+
+    </div><!--/. App End -->
+
+    {{> bottom/bottom}}
+
+</body>
+</html>

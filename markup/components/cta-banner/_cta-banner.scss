@@ -1,0 +1,55 @@
+/*
+|--------------------------------------------------------------------------
+| cta-banner
+|--------------------------------------------------------------------------
+*/
+
+.cta-banner {
+    background: linear-gradient(90deg, #3FA7E6 7.06%, #69C7FF 72.51%);
+    @include rem('padding', 40px);
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__left {
+
+    }
+
+    &__title {
+        @include rem('font-size', 18px);
+        color: #fff;
+    }
+
+    &__email {
+        @include rem('font-size', 36px);
+        font-weight: 600;
+        color: #fff;
+
+        @include media-breakpoint-down(sm) {
+            @include rem('font-size', 24px);
+        }
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            opacity: .9;
+            text-decoration: none;
+        }
+    }
+
+    &__button {
+        @include rem('border-radius', 32px);
+        height: 55px;
+        width: 223px;
+        margin-left: auto;
+        background: #fff;
+
+        @include media-breakpoint-down(sm) {
+            @include rem('margin', 15px 0 0 0)
+        }
+    }
+}

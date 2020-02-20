@@ -1,0 +1,49 @@
+/* Text Inputs + Textarea
+   ========================================================================== */
+
+.control {
+    margin-bottom: 1rem;
+
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-family: inherit;
+        font-size: .9rem;
+        line-height: 1.5;
+        color: #828b98;
+        min-height: 30px;
+        background-color: #fff;
+        background-image: none;
+        background-clip: padding-box;
+        border: 1px solid #e2e8ed;
+        border-radius: 0.25rem;
+        transition: all .1s ease-in;
+        -webkit-appearance: none;
+
+        &:focus {
+            color: #495057;
+            background-color: #fff;
+            border-color: #80bdff;
+            outline: none;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        &_textarea {
+            min-height: 150px;
+        }
+    }
+}
+
+/* Style Placeholders */
+
+::placeholder {
+    color: #ccc;
+}
+
+/* Style Errors */
+
+.is-required {
+    border-color: $red !important;
+}
+

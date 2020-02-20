@@ -1,0 +1,62 @@
+/*
+|--------------------------------------------------------------------------
+| news
+|--------------------------------------------------------------------------
+*/
+
+.news {
+    position: relative;
+    background: url("../img/general/wave_5.svg") top right 0 no-repeat;
+    background-size: 60%;
+
+    @include media-breakpoint-down(sm) {
+        background-size: contain;
+        background: none;
+    }
+
+    &__item {
+        max-width: 320px;
+
+        @include media-breakpoint-down(md) {
+            max-width: none;
+        }
+    }
+
+    &__date {
+        font-weight: 300;
+    }
+
+    &__title {
+        @include rem('font-size', 18px);
+        font-weight: 500;
+        line-height: 1.2;
+        @include rem('margin', 20px 0);
+        color: $black;
+        display: block;
+
+        &:hover,
+        &:focus {
+            color: $black;
+            opacity: .8;
+            text-decoration: none;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+    }
+
+    &__all {
+        @include rem('margin-top', 25px);
+        color: $black;
+        display: block;
+
+        &:hover,
+        &:focus {
+            color: $black;
+            opacity: .8;
+            text-decoration: none;
+        }
+    }
+}

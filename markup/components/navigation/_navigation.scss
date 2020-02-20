@@ -1,0 +1,30 @@
+/*
+|--------------------------------------------------------------------------
+| navigation
+|--------------------------------------------------------------------------
+*/
+
+.navigation {
+    display: flex;
+    align-items: center;
+
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+
+    &__link {
+        color: $blue;
+        position: relative;
+        margin-right: 1rem;
+        text-transform: uppercase;
+        @include transition();
+        outline: none;
+
+        &:hover,
+        &:focus,
+        &.-active {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+}

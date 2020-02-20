@@ -1,0 +1,98 @@
+/*
+|--------------------------------------------------------------------------
+| checkbox
+|--------------------------------------------------------------------------
+*/
+
+[type="checkbox"].filled-in:not(:checked),
+[type="checkbox"].filled-in:checked {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none
+}
+
+[type="checkbox"].filled-in + label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #393939;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+}
+
+[type="checkbox"].filled-in + label:after {
+    border-radius: 2px;
+}
+
+[type="checkbox"].filled-in + label:before,
+[type="checkbox"].filled-in + label:after {
+    content: '';
+    left: 0;
+    position: absolute;
+    -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1
+}
+
+[type="checkbox"].filled-in:not(:checked)+label:before {
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    left: 6px;
+    top: 10px;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%
+}
+
+[type="checkbox"].filled-in:not(:checked)+label:after {
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 2px solid #C4C4C4;
+    top: 0;
+    z-index: 0;
+}
+
+[type="checkbox"].filled-in:checked + label:before {
+    top: 2px;
+    left: 1px;
+    width: 8px;
+    height: 13px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%
+}
+
+[type="checkbox"].filled-in:checked + label:after {
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #1D5CFF;
+    background-color: #1D5CFF;
+    z-index: 0;
+}
+
+[type="checkbox"].filled-in:disabled:not(:checked) + label:before {
+    background-color: transparent;
+    border: 2px solid transparent
+}
+
+[type="checkbox"].filled-in:disabled:not(:checked) + label,
+[type="checkbox"].filled-in:disabled:checked + label,
+[type="checkbox"].filled-in:disabled:not(:checked) + label:after,
+[type="checkbox"].filled-in:disabled:checked + label:before,
+[type="checkbox"].filled-in:disabled:checked + label:after {
+    opacity: .45;
+    pointer-events: none;
+    cursor: default;
+}

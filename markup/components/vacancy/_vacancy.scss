@@ -1,0 +1,85 @@
+/*
+|--------------------------------------------------------------------------
+| vacancy
+|--------------------------------------------------------------------------
+*/
+
+/*
+|--------------------------------------------------------------------------
+| vacancy
+|--------------------------------------------------------------------------
+*/
+
+.vacancy {
+    @include rem('padding', 150px 0 0);
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 100px 0);
+    }
+
+    &:before {
+        content: '';
+        @include center(vertical);
+        right: 0;
+        width: 100%;
+        height: 800px;
+        background: url("../img/general/wave_9.svg") right center no-repeat;
+        z-index: -1;
+    }
+
+    &__card {
+        @include rem('border-radius', 5px);
+        @include rem('padding', 40px 100px 40px 20px);
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-repeat: no-repeat;
+        background-position: right bottom -30px;
+        background-size: contain;
+        height: 210px;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(45.27% 260.97% at 25.75% 50.24%, #3296D2 0%, #51B2EC 100%);
+            z-index: -1;
+        }
+    }
+
+    &__title {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__subtitle {
+        @include rem('font-size', 22px);
+        font-weight: 600;
+        color: #fff;
+        @include rem('margin-top', 10px);
+    }
+
+    &__button {
+        color: #fff;
+        font-weight: 500;
+        @include rem('border-radius', 5px);
+        @include rem('padding', 5px 25px);
+        height: 32px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        @include rem('margin-top', 10px);
+    }
+}

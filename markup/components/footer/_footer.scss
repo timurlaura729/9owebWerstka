@@ -1,0 +1,61 @@
+/*
+|--------------------------------------------------------------------------
+| footer
+|--------------------------------------------------------------------------
+*/
+
+.footer {
+    background: #F9F9F9;
+    @include rem('margin-top', 100px);
+
+    @include media-breakpoint-down(md) {
+        @include rem('margin-top', 55px);
+    }
+
+    &__main {
+        @include rem('padding', 60px 0);
+    }
+
+    &__link {
+        color: #383E44;
+        @include rem('margin-bottom', 15px);
+        display: block;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &:hover,
+        &:focus {
+            color: $blue;
+            text-decoration: none;
+        }
+    }
+
+    &__map {
+        padding: 0;
+        border: none;
+        display: block;
+        width: 100%;
+        outline: none !important;
+
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+
+    &__bottom {
+        font-size: 12px;
+        font-weight: 300;
+        display: flex;
+        justify-content: space-between;
+        @include rem('padding-bottom', 40px);
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+}
