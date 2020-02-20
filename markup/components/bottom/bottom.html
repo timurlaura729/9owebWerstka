@@ -4,39 +4,162 @@
 <noindex>
 
     <!-- Modal Cta Begin -->
-    <div id="modal-cta" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&#10005;</span>
-                </button>
-                <form class="form">
-                    <h2 class="form__title">ОСТАВЬТЕ ЗАЯВКУ, И МЫ ВНЕСЕМ ВАС В СПИСОК УЧАСТНИКОВ</h2>
-                    <div class="control">
-                        <input type="text" name="name" class="control__input js-name is-required" placeholder="Имя">
+    <div id="modal-cta" class="modal -wide fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal__dialog" role="document">
+            <div class="modal-content modal__content">
+                <div class="container -offset modal__container">
+                    <button type="button" class="burger -open modal__burger" data-dismiss="modal">
+                        <span class="burger__item"></span>
+                    </button>
+                    <div class="modal__header">Заявка</div>
+                    <div class="cta modal__cta">
+                        <form class="cta__form">
+                            <div class="row align-items-center mb-md-4">
+                                <div class="col-md-6">
+                                    <div class="cta__label">Меня зовут: *</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="control">
+                                        <input type="text" class="control__input" value="Киану Риввз" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-md-4">
+                                <div class="col-md-6">
+                                    <div class="cta__label">Я хочу заказать у вас: *</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="control">
+                                        <select class="jsSelectPicker" title="Разработку сайта">
+                                            <option value="1">Разработку сайта</option>
+                                            <option value="2">+34</option>
+                                            <option value="3">+22</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-md-4">
+                                <div class="col-md-6">
+                                    <div class="cta__label">Напишите мне на: *</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="control">
+                                        <input type="text" class="control__input" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-md-4">
+                                <div class="col-md-6">
+                                    <div class="cta__label">Или позвоните по номеру:</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="control has-error">
+                                        <input type="text" class="control__input" placeholder="+7 ___ ___ __ __">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mb-md-4">
+                                <div class="col-md-6">
+                                    <div class="cta__label">Также прикрепляю файл:</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="file-uploader">
+                                        <label class="file-uploader__label">Прикрепить файл</label>
+                                        <input type="file" class="file-uploader__input">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="button -white cta__form-button">Обсудить</button>
+                                <div class="cta__form-desc">* Поля, обязательные для заполнения</div>
+                            </div>
+                        </form>
                     </div>
-                    <div class="control">
-                        <input type="text" name="phone" class="control__input js-phone is-required" placeholder="Телефон">
-                    </div>
-                    <div class="control">
-                        <input type="text" name="email" class="control__input js-email is-required" placeholder="Email">
-                    </div>
-                    <button type="submit" class="button form__button">Оставить заявку</button>
-                </form>
+                </div>
             </div>
         </div>
     </div><!--/. Modal Cta End -->
 
+    <!-- Modal Menu Begin -->
+    <div id="modal-menu" class="modal -wide fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal__dialog" role="document">
+            <div class="modal-content modal__content">
+                <div class="container -offset modal__container">
+                    <button type="button" class="burger -open modal__burger" data-dismiss="modal">
+                        <span class="burger__item"></span>
+                    </button>
+                    <div class="modal__header">Меню</div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="modal__menu">
+                                <a href="#" class="modal__menu-link">Главная</a>
+                                <a href="#" class="modal__menu-link">Агентство</a>
+                                <a href="#" class="modal__menu-link">Услуги</a>
+                                <a href="#" class="modal__menu-link">Портфолио</a>
+                                <a href="#" class="modal__menu-link">Кейсы</a>
+                                <a href="#" class="modal__menu-link">Блог</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="modal__text">
+                                <h2>Ключевые компетенции</h2>
+                                <h3>Лэндинги</h3>
+                                <h3>Сайты на Wordpress</h3>
+                                <h3>SMM</h3>
+                                <h3>Таргетированная реклама</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__info">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="modal__submenu">
+                                    <a href="#" class="modal__submenu-link">Контакты</a>
+                                    <a href="#" class="modal__submenu-link">Вакансии</a>
+                                    <a href="#" class="modal__submenu-link">Отзывы</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="#" class="modal__phone">+7 708 103 74 85</a>
+                                <div class="social modal__social">
+                                    <a href="#" class="social__link">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <i class="fa fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <i class="fa fa-vk"></i>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social__link">
+                                        <i class="fa fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__bottom">
+                        <div class="modal__bottom-item">2015 - 2019. Все права защищены. Агентство 9 O’WEB </div>
+                        <div class="modal__bottom-item">Сделано своими руками с любовью.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--/. Modal Menu End -->
+
     <!-- Modal Success Begin -->
     <div id="modal-success" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <div class="modal-content modal__content">
+                <button type="button" class="close modal__close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&#10005;</span>
                 </button>
                 <div class="modal__success">
-                    <h2 class="modal__title">Спасибо!</h2>
-                    <div class="modal__subtitle">Наш менеджер перезвонит Вам!</div>
+                    <h2>Спасибо!</h2>
+                    <p>Наш менеджер перезвонит Вам!</p>
                 </div>
             </div>
         </div>

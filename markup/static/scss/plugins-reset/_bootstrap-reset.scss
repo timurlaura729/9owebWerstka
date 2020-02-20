@@ -32,33 +32,279 @@
 
 .modal {
 
-    .modal-dialog {
-
-    }
-
-    .modal-content {
-        padding: 30px 0;
-        border: none;
-    }
-
-    .close {
+    &__close {
         position: absolute;
         top: 15px;
         right: 15px;
+        outline: none !important;
+    }
+
+    &__burger {
+        top: 30px !important;
+        transform: none;
+        position: absolute !important;
+        left: 15px;
+    }
+
+    &__content {
+        border: none;
     }
 
     &__success {
+        @include rem('padding', 35px 25px);
         text-align: center;
-        padding: 30px 0;
     }
 
-    &__title {
-        color: #000;
+    &__container {
+        height: 100%;
+
+        @include media-breakpoint-down(md) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
-    &__subtitle {
-        font-size: 20px;
-        color: #000;
+    &__header {
+        @include rem('font-size', 42px);
+        font-weight: 800;
+        color: #fff;
+        @include rem('padding-bottom', 70px);
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    &__phone {
+        @include rem('font-size', 18px);
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        display: block;
+        @include rem('margin', 15px 0);
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            opacity: .8;
+        }
+
+        @include media-breakpoint-up(lg) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include media-breakpoint-down(md) {
+            align-items: center;
+        }
+    }
+
+    &__menu-link {
+        @include rem('font-size', 24px);
+        font-weight: 500;
+        color: #fff;
+        line-height: 1;
+        @include rem('margin-bottom', 30px);
+
+        @include media-breakpoint-down(md) {
+            @include rem('font-size', 20px);
+            font-weight: 500;
+            color: #fff;
+            line-height: 1;
+            @include rem('margin-bottom', 20px);
+        }
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            opacity: .8;
+        }
+    }
+
+    &__submenu {
+        display: flex;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    &__submenu-link {
+        @include rem('font-size', 18px);
+        font-weight: 500;
+        color: #fff;
+        line-height: 1;
+        @include rem('margin-right', 25px);
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            opacity: .8;
+        }
+    }
+
+    &__text {
+        color: #fff;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        left: 130px;
+        right: 0;
+        bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    &__bottom-item {
+        @include rem('font-size', 12px);
+        font-weight: 300;
+        color: #fff;
+    }
+
+    &__info {
+        @include rem('margin-top', 40px);
+    }
+
+    &__social {
+        margin-top: 0 !important;
+
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+        }
+
+        .social__link {
+            @include rem('font-size', 24px);
+            width: 40px;
+            flex: 0 0 40px;
+            max-width: 40px;
+            height: 40px;
+            background: #fff;
+            @include rem('margin', 0 10px);
+            color: $blue;
+        }
+    }
+
+    &__cta {
+        padding: 0;
+
+        &:before {
+            display: none;
+        }
+
+        .cta__label {
+            color: #fff;
+        }
+
+        .control__input {
+            color: #fff !important;
+        }
+
+        .selectize-control.single .selectize-input {
+            color: #fff !important;
+        }
+
+        .selectize-control.single .selectize-input:after {
+            border-color: #fff transparent transparent transparent;
+        }
+
+        .file-uploader {
+            color: #fff;
+        }
+
+        .file-uploader__label {
+
+            &:before {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .cta__form-desc {
+            color: #fff;
+        }
+    }
+
+    &.-wide {
+        transform: translateY(-100%);
+        @include transition(.3s);
+        overflow: hidden !important;
+
+        &.show {
+            transform: translateY(0%);
+            display: block !important;
+        }
+
+        .modal__dialog {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            bottom: 0;
+            padding: 0;
+            max-width: none;
+            pointer-events: auto;
+            background: url("../img/content/menu-bg.jpg") center/cover no-repeat;
+
+            @include media-breakpoint-down(md) {
+
+            }
+        }
+
+        .modal__content {
+            background: none;
+            @include rem('padding', 35px 0);
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+
+            @include media-breakpoint-down(md) {
+                @include rem('padding', 0);
+            }
+        }
+
+        .modal__close {
+            @include rem('font-size', 34px);
+            font-weight: bold;
+            position: absolute;
+            color: #000;
+            z-index: 5;
+            text-shadow: none;
+            opacity: 1;
+            top: 15px;
+            right: 15px;
+            float: none;
+            outline: none;
+            @include transition(.3s);
+
+            @include media-breakpoint-up(sm) {
+                top: 30px;
+                right: 30px;
+            }
+
+            &:hover {
+                transform: rotate(90deg);
+            }
+        }
     }
 }
 

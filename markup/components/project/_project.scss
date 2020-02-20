@@ -18,9 +18,7 @@
         @include rem('margin-bottom', 25px);
 
         @include media-breakpoint-down(sm) {
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-start;
+            justify-content: center;
         }
     }
 
@@ -53,15 +51,27 @@
 
         @include media-breakpoint-down(sm) {
             @include rem('margin-top', 25px);
+            display: none;
+        }
+    }
+
+    &__subtitle {
+
+        @include media-breakpoint-down(sm) {
+            color: #fff;
+            text-align: center;
+            @include rem('padding', 20px 15px);
+            background: $blue;
+            margin: 0 -15px;
         }
     }
 
     &__img {
-        box-shadow: 0px 4px 30px rgba(75, 75, 75, 0.1);
+        box-shadow: 0 4px 30px rgba(75, 75, 75, 0.1);
         @include rem('margin', 50px 0);
 
         @include media-breakpoint-down(md) {
-            @include rem('margin', 20px 0);
+            @include rem('margin', 0 -15px 20px);
         }
 
         img {

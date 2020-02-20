@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba3feb22-022f-4b98-b627-3a7bdbce5afa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/bottom/bottom.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/bottom/bottom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/burger/_burger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/burger/_burger.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/cta/_cta.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/cta/_cta.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/forms/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/forms/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/header/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/header/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/lang/_lang.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/lang/_lang.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/project/_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/project/_project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/social/_social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/social/_social.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/socialbar/_socialbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/socialbar/_socialbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/vacancy-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/vacancy-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/vacancy-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/vacancy-single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/static/scss/plugins-reset/_bootstrap-reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/scss/plugins-reset/_bootstrap-reset.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +31,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="ProjectId" id="1Y4FsKPJ9FJaXRDrBjXQFzEXulY" />
   <component name="ProjectViewState">
@@ -46,11 +69,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582194164818</updated>
-      <workItem from="1582194166161" duration="709000" />
+      <workItem from="1582194166161" duration="11239000" />
     </task>
+    <task id="LOCAL-00001" summary="node modules">
+      <created>1582196911506</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582196911506</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="node modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="node modules" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1582196897988">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1582196897988" />
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1582198897649">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1582198897649" />
+    <state x="681" y="259" key="run.anything.popup" timestamp="1582202672866">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" key="run.anything.popup/0.0.2048.1112@0.0.2048.1112" timestamp="1582202672866" />
   </component>
 </project>

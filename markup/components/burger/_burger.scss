@@ -16,6 +16,7 @@
     position: relative;
     outline: none !important;
     box-shadow: 0 10px 10px rgba(52, 151, 210, 0.25);
+    z-index: 10;
 
     @include media-breakpoint-up(lg) {
         position: absolute;
@@ -31,25 +32,6 @@
     &:hover,
     &:focus {
         box-shadow: none;
-    }
-
-    &.-open {
-
-        .burger__item {
-            height: 0;
-
-            &:before {
-                transform: translate(-50%, -50%) rotate(45deg);
-                top: 50%;
-                left: 50%;
-            }
-
-            &:after {
-                transform: translate(-50%, -50%) rotate(-45deg);
-                top: 50%;
-                left: 50%;
-            }
-        }
     }
 
     &__item {
@@ -77,6 +59,29 @@
 
         &:after {
             top: 7px;
+        }
+    }
+
+    &.-open {
+        background: #fff;
+
+        .burger__item {
+            height: 0;
+            background: $blue;
+
+            &:before {
+                transform: translate(-50%, -50%) rotate(45deg);
+                top: 50%;
+                left: 50%;
+                background: $blue;
+            }
+
+            &:after {
+                transform: translate(-50%, -50%) rotate(-45deg);
+                top: 50%;
+                left: 50%;
+                background: $blue;
+            }
         }
     }
 }

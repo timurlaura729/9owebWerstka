@@ -83,6 +83,7 @@
 
 .file-uploader {
     color: #D5D5E2;
+    @include rem('margin-top', 15px);
 
     &__label {
         @include rem('font-size', 18px);

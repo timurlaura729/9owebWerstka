@@ -4,6 +4,29 @@ $(function() {
 
     /*
     |--------------------------------------------------------------------------
+    | Sticky Kit
+    |--------------------------------------------------------------------------
+    */
+
+    $(window).scroll(function(){
+        /*if ( $(this).scrollTop() > $('.footer').outerHeight() - 100) {
+            $('.socialbar').addClass('is-active')
+        } else {
+            $('.socialbar').removeClass('is-active')
+        }*/
+
+        if ( $(this).scrollTop() > $( document ).height() - $('.footer').outerHeight() - $(window).outerHeight()) {
+            $('.socialbar').removeClass('is-active')
+        } else {
+            $('.socialbar').addClass('is-active')
+        }
+
+    });
+
+
+
+    /*
+    |--------------------------------------------------------------------------
     | Selectpicker
     |--------------------------------------------------------------------------
     */
@@ -16,14 +39,12 @@ $(function() {
     |--------------------------------------------------------------------------
     */
 
-    $('.jsBurgerMenu').click(function() {
-        $(this).toggleClass('-open');
-        $('.m-menu').toggleClass('-show');
-        if ($(this).hasClass('-open')) {
-            $('body').css({"overflow": "hidden"});
-        } else {
-            $('body').css({"overflow": ""});
-        }
+    $('.modal').on('shown.bs.modal', function (e) {
+        $('.lang').toggleClass('-inverted');
+    });
+
+    $('.modal').on('hide.bs.modal', function (e) {
+        $('.lang').toggleClass('-inverted');
     });
 
     /*

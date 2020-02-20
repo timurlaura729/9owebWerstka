@@ -33,6 +33,10 @@
             margin-left: 0;
         }
 
+        &:last-child {
+            margin-right: 0;
+        }
+
         &:hover,
         &:focus {
             color: #fff;

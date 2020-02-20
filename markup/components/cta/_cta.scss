@@ -64,7 +64,8 @@
         font-weight: 500;
 
         @include media-breakpoint-down(sm) {
-            @include rem('font-size', 14px);
+            @include rem('font-size', 12px);
+            font-weight: 400;
             color: #D5D5E2;
         }
     }
