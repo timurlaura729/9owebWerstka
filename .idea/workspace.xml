@@ -3,24 +3,73 @@
   <component name="ChangeListManager">
     <list default="true" id="ba3feb22-022f-4b98-b627-3a7bdbce5afa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/project.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/article.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/article.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/ava.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/ava.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/blog.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/blog.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/client-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/client-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/girl.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/girl.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/kroma.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/kroma.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/map.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/map.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/menu-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/menu-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/p1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/p1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/p2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/p2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/p3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/p3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/project-sheme.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/project-sheme.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/project.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/project.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/prok.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/prok.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/team.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/team.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/content/work.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/content/work.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/achievements.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/achievements.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/app.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/app.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ellipse.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ellipse.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/entry_img.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/entry_img.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic-angle_right_white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic-angle_right_white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic-link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic-link.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic-long-arrow_left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic-long-arrow_left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic-project-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic-project-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic-project-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic-project-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic-project-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic-project-3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic-quotes.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic-quotes.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic_angle_down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic_angle_down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic_angle_left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic_angle_left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic_angle_right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic_angle_right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic_attach.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic_attach.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic_fb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic_fb.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic_instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic_instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic_play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic_play.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/ic_tw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/ic_tw.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/lightgallery/video-play.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/lightgallery/video-play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/lightgallery/vimeo-play.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/lightgallery/vimeo-play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/lightgallery/youtube-play.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/lightgallery/youtube-play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_10.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_10.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_11.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_11.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_12.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_12.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_4.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_5.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_5.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_6.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_6.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_7.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_7.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_8.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_8.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/wave_9.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/wave_9.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/img/general/work.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/work.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/js/separate-js/html5shiv-3.7.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/separate-js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/vacancy-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vacancy-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/vacancy-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vacancy-single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markup/components/bottom/bottom.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/bottom/bottom.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/burger/_burger.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/burger/_burger.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/cta/_cta.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/cta/_cta.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/forms/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/forms/_forms.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markup/components/header/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/header/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markup/components/header/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/header/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/lang/_lang.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/lang/_lang.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/project/_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/project/_project.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/social/_social.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/social/_social.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/socialbar/_socialbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/socialbar/_socialbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/projects.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/services.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/vacancy-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/vacancy-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/vacancy-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/vacancy-single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markup/static/scss/plugins-reset/_bootstrap-reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/scss/plugins-reset/_bootstrap-reset.scss" afterDir="false" />
     </list>
@@ -69,7 +118,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582194164818</updated>
-      <workItem from="1582194166161" duration="11239000" />
+      <workItem from="1582194166161" duration="11742000" />
+      <workItem from="1582455832617" duration="297000" />
+      <workItem from="1582459218312" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="node modules">
       <created>1582196911506</created>
@@ -78,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582196911506</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Менюшка и заявка">
+      <created>1582207658836</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582207658836</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,17 +144,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="node modules" />
-    <option name="LAST_COMMIT_MESSAGE" value="node modules" />
+    <MESSAGE value="Менюшка и заявка" />
+    <option name="LAST_COMMIT_MESSAGE" value="Менюшка и заявка" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1582196897988">
+    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1582207657122">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1582196897988" />
-    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1582198897649">
+    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1582207657122" />
+    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1582456129025">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1582198897649" />
+    <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1582456129025" />
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1582207660222">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1582207660222" />
     <state x="681" y="259" key="run.anything.popup" timestamp="1582202672866">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

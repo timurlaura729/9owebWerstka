@@ -40,11 +40,11 @@ $(function() {
     */
 
     $('.modal').on('shown.bs.modal', function (e) {
-        $('.lang').toggleClass('-inverted');
+
     });
 
     $('.modal').on('hide.bs.modal', function (e) {
-        $('.lang').toggleClass('-inverted');
+
     });
 
     /*

@@ -30,20 +30,83 @@
     }
 }
 
+#modal-cta {
+    z-index: 1052;
+}
+
 .modal {
 
     &__close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
+
         outline: none !important;
     }
 
+    .lang__link {
+        color: #fff;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__header-right {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+
+    .lang__link.-active {
+        color: #fff;
+        border-color: #fff;
+    }
+
+    &__header-button {
+        color: $blue;
+        background: #fff !important;
+        min-width: 200px;
+        position: relative;
+
+        @include media-breakpoint-down(md) {
+            display: none !important;
+        }
+    }
+
     &__burger {
-        top: 30px !important;
-        transform: none;
-        position: absolute !important;
+        background: url("../img/general/ic-close.svg") no-repeat;
+        width: 50px;
+        height: 50px;
+        outline: none !important;
+        border: none;
+        padding: 0;
+        @include center(vertical);
         left: 15px;
+    }
+
+
+    &__header-title {
+        @include rem('font-size', 42px);
+        font-weight: 800;
+        color: #fff;
+        line-height: 1;
+        @include rem('padding-left', 130px);
+
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+    }
+
+    &__body {
+        @include rem('padding-top', 140px);
+
+        @include media-breakpoint-down(md) {
+            padding-top: 0;
+        }
     }
 
     &__content {
@@ -63,17 +126,6 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-    }
-
-    &__header {
-        @include rem('font-size', 42px);
-        font-weight: 800;
-        color: #fff;
-        @include rem('padding-bottom', 70px);
-
-        @include media-breakpoint-down(md) {
-            display: none;
         }
     }
 
@@ -205,6 +257,7 @@
 
     &__cta {
         padding: 0;
+        background: none !important;
 
         &:before {
             display: none;
@@ -216,10 +269,12 @@
 
         .control__input {
             color: #fff !important;
+            background: none !important;
         }
 
         .selectize-control.single .selectize-input {
             color: #fff !important;
+            background: none !important;
         }
 
         .selectize-control.single .selectize-input:after {
@@ -272,13 +327,12 @@
         .modal__content {
             background: none;
             @include rem('padding', 35px 0);
-            display: block;
             position: absolute;
             top: 0;
             bottom: 0;
 
             @include media-breakpoint-down(md) {
-                @include rem('padding', 0);
+                @include rem('padding', 35px 0);
             }
         }
 
