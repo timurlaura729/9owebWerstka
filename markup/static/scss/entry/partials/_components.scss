@@ -13,6 +13,9 @@
 // forms
 @import 'components/forms/_forms.scss';
 
+// breadcrumbs
+@import 'components/breadcrumbs/_breadcrumbs.scss';
+
 // section-header
 @import 'components/section-header/_section-header.scss';
 
@@ -21,6 +24,9 @@
 
 // burger
 @import 'components/burger/_burger.scss';
+
+// search
+@import 'components/search/_search.scss';
 
 // logo
 @import 'components/logo/_logo.scss';
@@ -82,11 +88,20 @@
 // project
 @import 'components/project/_project.scss';
 
+// project-list
+@import 'components/project-list/_project-list.scss';
+
 // project-slider
 @import 'components/project-slider/_project-slider.scss';
 
 // social
 @import 'components/social/_social.scss';
+
+// search-results
+@import 'components/search-results/_search-results.scss';
+
+// search-tags
+@import 'components/search-tags/_search-tags.scss';
 
 // footer
 @import 'components/footer/_footer.scss';

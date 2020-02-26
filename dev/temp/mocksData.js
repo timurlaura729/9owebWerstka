@@ -14,6 +14,12 @@ __pages: [{
                 name: 'projects',
                 href: 'projects.html'
              },{
+                name: 'search-by-tag',
+                href: 'search-by-tag.html'
+             },{
+                name: 'search-results',
+                href: 'search-results.html'
+             },{
                 name: 'services',
                 href: 'services.html'
              },{

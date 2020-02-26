@@ -8,23 +8,29 @@
     @include nl();
     position: relative;
     background: none;
-    display: block;
+    display: flex;
+    align-items: center;
+    @include rem('margin-bottom', 20px);
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
 
     &__item {
-        display: inline-block;
+        font-weight: 300;
+        color: $black;
+        display: flex;
+        align-items: center;
         position: relative;
-        margin-right: 5px;
 
         &:before {
-            font-family: 'FontAwesome';
-            @include rem('font-size', 13px);
-            color: rgba(0, 0, 0, 0.6);
-            content: '\f105';
-            display: inline-block;
-            vertical-align: middle;
-            margin: -1px 1px 0 0;
+            content: '';
+            width: 27px;
+            height: 8px;
+            background: url("../img/general/ic-long-arrow_left.svg");
+            background-size: 100%;
+            @include rem('margin', 0 15px);
         }
-
         &:first-child:before {
             display: none
         }
@@ -34,14 +40,13 @@
         }
     }
 
-    &__link,
-    &__item {
-        @include rem('font-size', 13px);
-        color: rgba(0, 0, 0, 0.6);
-        text-decoration: none;
+    &__link {
+        color: $black;
+        text-decoration: underline;
 
         &:hover,
         &:focus {
+            color: $blue;
             text-decoration: none;
         }
     }

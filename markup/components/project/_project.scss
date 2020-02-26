@@ -14,6 +14,7 @@
 
     &__top {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         @include rem('margin-bottom', 25px);
 
@@ -24,7 +25,7 @@
 
     &__link {
         @include rem('font-size', 18px);
-        font-weight: 600;
+        font-weight: 300;
         display: flex;
         align-items: center;
         border-bottom: 1px solid $blue;
@@ -173,9 +174,11 @@
         @include rem('font-size', 13px);
         font-weight: 300;
         height: 40px;
+        color: $blue;
         display: inline-flex;
         align-items: center;
-        border: 2px solid #D5D5E2;
+        border: 1px solid $blue;
+        @include rem('border-radius', 32px);
         line-height: 1;
         @include rem('padding', 7px 20px);
         box-shadow: 0px 4px 30px rgba(75, 75, 75, 0.02);

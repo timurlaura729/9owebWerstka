@@ -15,7 +15,7 @@
         color: $black;
         border-bottom: 1px solid $black;
         position: relative;
-        @include rem('margin', 0 0 10px 55px);
+        @include rem('margin', 0 0 10px 40px);
         display: inline-block;
 
         &:hover,
@@ -28,8 +28,8 @@
         &:before {
             content: '';
             @include center(vertical);
-            left: -55px;
-            width: 36px;
+            left: -40px;
+            width: 27px;
             height: 8px;
             background: url("../img/general/ic-long-arrow_left.svg");
         }

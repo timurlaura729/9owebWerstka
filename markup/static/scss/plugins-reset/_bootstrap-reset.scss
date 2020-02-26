@@ -213,6 +213,16 @@
         }
     }
 
+    &__search {
+        @include rem('margin', 25px 0 0 0);
+        max-width: 325px;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            max-width: none;
+        }
+    }
+
     &__bottom {
         position: absolute;
         left: 130px;
