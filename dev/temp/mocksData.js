@@ -14,6 +14,9 @@ __pages: [{
                 name: 'projects',
                 href: 'projects.html'
              },{
+                name: 'reviews',
+                href: 'reviews.html'
+             },{
                 name: 'search-by-tag',
                 href: 'search-by-tag.html'
              },{

@@ -5,17 +5,16 @@
 */
 
 .reviews {
-    position: relative;
-    background: url("../img/general/wave_4.svg") bottom right 12% no-repeat;
-    background-size: 40%;
+    @include rem('padding', 160px 0 0);
+    background: url("../img/general/wave_11.svg") top right no-repeat;
+
+    @include media-breakpoint-down(md) {
+        @include rem('padding', 160px 0 0);
+    }
+
 
     @include media-breakpoint-down(sm) {
         background-size: contain;
-        background: none;
-    }
-
-    &__row {
-        max-width: 600px;
     }
 
     &__video {
@@ -71,11 +70,32 @@
 
     &__title {
         color: #fff;
+        @include rem('font-size', 18px);
     }
 
     &__subtitle {
-        font-size: 11px;
+        @include rem('font-size', 17px);
+        font-weight: 300;
         color: #fff;
         margin-top: 5px;
+    }
+
+    &__button {
+        @include rem('font-size', 18px);
+        font-weight: 300;
+        color: $blue;
+        display: flex;
+        border: 1px solid $blue;
+        @include rem('border-radius', 32px);
+        height: 55px;
+        max-width: 300px;
+        width: 100%;
+        @include rem('margin', 70px auto 0);
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            background: $blue;
+        }
     }
 }

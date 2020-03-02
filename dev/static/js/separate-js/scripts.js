@@ -115,12 +115,35 @@ $(function() {
         speed: 500,
         mousewheel: true,
         loop: true,
-        slidesPerView: 1.10,
+        slidesPerView: 5,
         spaceBetween: 10,
         freeMode: true,
         pagination: {
             el: '.js-team-slider-pagination',
         },
+        breakpoints: {
+            1640: {
+                slidesPerView: 4,
+            },
+            1380: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+            768: {
+                slidesPerView: 1,
+            },
+            640: {
+                slidesPerView: 1,
+            },
+            320: {
+                slidesPerView: 1,
+            }
+        }
     });
 
     /*

@@ -16,6 +16,11 @@
         background-size: contain;
     }
 
+    .swiper-slide {
+
+
+    }
+
     &__list {
 
         @include media-breakpoint-down(sm) {
@@ -29,7 +34,7 @@
         overflow: hidden;
 
         @include media-breakpoint-up(sm) {
-            height: 170px;
+            height: 380px;
         }
 
         &:before {
@@ -71,9 +76,14 @@
     }
 
     &__slider {
+        position: relative;
+        z-index: 9;
 
-        @include media-breakpoint-up(md) {
-            display: none;
+        @include media-breakpoint-up(lg) {
+            right: 0;
+            margin-right: -70vw;
+            max-width: 70vw;
+            width: 70vw;
         }
     }
 

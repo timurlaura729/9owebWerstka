@@ -73,6 +73,14 @@
     &__card-img {
         display: block;
         width: 100%;
+        height: 308px;
+        object-fit: cover;
+        object-position: center 50%;
+        font-family: 'object-fit: cover; object-position: center 50%'; // ie
+
+        @include media-breakpoint-down(md) {
+            height: 250px;
+        }
     }
 
     &__card-desc {
@@ -112,6 +120,17 @@
             color: $black;
             @include rem('font-size', 20px);
         }
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            opacity: .8;
+
+            @include media-breakpoint-down(md) {
+                color: $black;
+            }
+        }
     }
 
     &__card-category {
@@ -120,6 +139,17 @@
         @include rem('border-radius', 32px);
         border: 1px solid #fff;
         @include rem('padding', 7px 25px);
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+            opacity: .8;
+
+            @include media-breakpoint-down(md) {
+                color: $black;
+            }
+        }
 
         @include media-breakpoint-down(md) {
             color: $black;

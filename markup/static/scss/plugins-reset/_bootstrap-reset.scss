@@ -37,7 +37,9 @@
 .modal {
 
     &__close {
-
+        position: absolute;
+        top: 15px;
+        right: 15px;
         outline: none !important;
     }
 
@@ -266,7 +268,7 @@
     }
 
     &__cta {
-        padding: 0;
+        padding: 0 !important;
         background: none !important;
 
         &:before {
