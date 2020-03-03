@@ -109,6 +109,17 @@
         @include media-breakpoint-down(md) {
             color: $black;
         }
+
+        a {
+            color: #fff;
+            text-decoration: underline;
+
+            &:hover,
+            &:focus {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
     }
 
     &__card-title {
@@ -140,20 +151,21 @@
         border: 1px solid #fff;
         @include rem('padding', 7px 25px);
 
-        &:hover,
-        &:focus {
-            color: #fff;
-            text-decoration: none;
-            opacity: .8;
-
-            @include media-breakpoint-down(md) {
-                color: $black;
-            }
+        @include media-breakpoint-down(md) {
+            color: $blue;
+            border: 1px solid $blue;
         }
 
-        @include media-breakpoint-down(md) {
-            color: $black;
-            border: 1px solid $black;
+        &:hover,
+        &:focus {
+            color: #000;
+            text-decoration: none;
+            background: #fff;
+
+            @include media-breakpoint-down(md) {
+                color: #fff;
+                background: $blue;
+            }
         }
     }
 }

@@ -1,0 +1,108 @@
+/*
+|--------------------------------------------------------------------------
+| video-modal
+|--------------------------------------------------------------------------
+*/
+
+.video-modal {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
+    opacity: 0.0;
+    transform: translate(500%,0%);
+    transition: transform 0s linear 0s;
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 0;
+        background: rgba(0, 0, 0, .82); /* overlay color */
+        opacity: 0.0;
+        transition: opacity 0.2s ease-out 0.05s;
+    }
+
+    &__close {
+        position: absolute;
+        right: 0;
+        top: -40px;
+        color: #fff;
+        display: block;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            opacity: .7;
+        }
+    }
+
+    &__content {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        z-index: 1;
+        margin: 0 auto;
+        overflow-y: visible;
+        background: #000;
+        width: calc(100% - 12em);
+        height: 0;
+        padding-top: calc((100% - 12em) * 0.5625); /* 16:9 calc */
+
+        /* Scaling to fit within the current Viewport size:
+        When viewport aspect ratio is greater than 16:9
+        work off the height instead of the width for calc */
+        @media (min-aspect-ratio: 16/9) {
+            width: 0;
+            height: calc(100vh - 10em);
+            padding-top: 0;
+            padding-left: calc((100vh - 10em) * 1.7778); /* 16:9 calc */
+        }
+
+        /* Mobile Layout Tweaks - side margins reduced */
+        @media (max-width: 640px) {
+            width: calc(100% - 1em);
+            padding-top: calc((100% - 1em) * 0.5625); /* 16:9 calc */
+        }
+    }
+
+    /* set the iframe element to stretch to fit its parent element */
+    &__iframe {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: #000;
+        box-shadow: 0 2px 16px rgba(0,0,0,0.5);
+    }
+}
+
+/* show the modal:
+   add class to the body to reveal */
+.video-modal-show {
+
+    .video-modal {
+        opacity: 1.0;
+        transform: translate(0%,0%);
+    }
+
+    .video-modal__overlay {
+        opacity: 1.0;
+    }
+
+    .video-modal__content {
+        transform: translate(0%,0%);
+    }
+}

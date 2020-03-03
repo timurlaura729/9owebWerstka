@@ -158,50 +158,77 @@ $(function() {
 
     /*
     |--------------------------------------------------------------------------
-    | Responsive iframe inside bootstrap modal
+    | Responsive Iframe Inside Modal
     |--------------------------------------------------------------------------
     */
 
-    (function($) {
+    function toggle_video_modal() {
 
-        $.fn.bmdIframe = function( options ) {
-            var self = this;
-            var settings = $.extend({
-                classBtn: '.bmd-modalButton',
-                defaultW: 640,
-                defaultH: 360
-            }, options );
+        // Click on video thumbnail or link
+        $(".js-video-modal").on("click", function(e){
 
-            $(settings.classBtn).on('click', function(e) {
-                var allowFullscreen = $(this).attr('data-bmdVideoFullscreen') || false;
+            // prevent default behavior for a-tags, button tags, etc.
+            e.preventDefault();
 
-                var dataVideo = {
-                    'src': $(this).attr('data-bmdSrc'),
-                    'height': $(this).attr('data-bmdHeight') || settings.defaultH,
-                    'width': $(this).attr('data-bmdWidth') || settings.defaultW
-                };
+            // Grab the video ID from the element clicked
+            var id = $(this).attr('data-youtube-id');
 
-                if ( allowFullscreen ) dataVideo.allowfullscreen = "";
+            // Autoplay when the modal appears
+            // Note: this is intetnionally disabled on most mobile devices
+            // If critical on mobile, then some alternate method is needed
+            var autoplay = '?autoplay=1';
 
-                // stampiamo i nostri dati nell'iframe
-                $(self).find("iframe").attr(dataVideo);
-            });
+            // Don't show the 'Related Videos' view when the video ends
+            var related_no = '&rel=0';
 
-            // se si chiude la modale resettiamo i dati dell'iframe per impedire ad un video di continuare a riprodursi anche quando la modale è chiusa
-            this.on('hidden.bs.modal', function(){
-                $(this).find('iframe').html("").attr("src", "");
-            });
+            // String the ID and param variables together
+            var src = '//www.youtube.com/embed/'+id+autoplay+related_no;
 
-            return this;
-        };
+            // Pass the YouTube video ID into the iframe template...
+            // Set the source on the iframe to match the video ID
+            $(".video-modal__iframe").attr('src', src);
 
-    })(jQuery);
+            // Add class to the body to visually reveal the modal
+            $("body").addClass("video-modal-show");
 
-    jQuery(document).ready(function(){
-        jQuery("#iframe-modal").bmdIframe();
-    });
+            $('body').css({"overflow": "hidden"});
 
+        });
 
+        // Close and Reset the Video Modal
+        function close_video_modal() {
+
+            event.preventDefault();
+
+            // re-hide the video modal
+            $("body").removeClass("video-modal-show");
+
+            $('body').css({"overflow": ""});
+
+            // reset the source attribute for the iframe template, kills the video
+            $(".video-modal__iframe").attr('src', '');
+
+        }
+        // if the 'close' button/element, or the overlay are clicked
+        $('body').on('click', '.video-modal__close, .video-modal__overlay', function(event) {
+
+            // call the close and reset function
+            close_video_modal();
+
+        });
+        // if the ESC key is tapped
+        $('body').keyup(function(e) {
+            // ESC key maps to keycode `27`
+            if (e.keyCode == 27) {
+
+                // call the close and reset function
+                close_video_modal();
+
+            }
+        });
+    }
+
+    toggle_video_modal();
 
     /*
     |--------------------------------------------------------------------------

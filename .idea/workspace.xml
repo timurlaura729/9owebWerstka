@@ -69,9 +69,17 @@
       <change beforePath="$PROJECT_DIR$/dev/static/img/general/work.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/work.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/js/separate-js/html5shiv-3.7.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/separate-js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/vacancy-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vacancy-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/vacancy-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vacancy-single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/reviews/_reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/reviews/_reviews.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/article/_article.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/article/_article.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/blog/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/blog/_blog.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/bottom/bottom.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/bottom/bottom.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/article.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/pages/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/reviews.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/static/scss/entry/partials/_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/scss/entry/partials/_components.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +142,8 @@
       <workItem from="1582750342568" duration="600000" />
       <workItem from="1582799724330" duration="14000" />
       <workItem from="1583142714797" duration="4484000" />
-      <workItem from="1583225013652" duration="64000" />
+      <workItem from="1583225013652" duration="1769000" />
+      <workItem from="1583231653738" duration="6033000" />
     </task>
     <task id="LOCAL-00001" summary="node modules">
       <created>1582196911506</created>
@@ -171,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583158258992</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Фикс высота у картинок отзыва">
+      <created>1583225154112</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1583225154112</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -183,21 +199,22 @@
     <MESSAGE value="Обновленные модалки" />
     <MESSAGE value="Добавил поиск в модалку, добавил поиск в футер, добавил две новые страницы. Надо заменить css и js" />
     <MESSAGE value="Обновил задачи" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновил задачи" />
+    <MESSAGE value="Фикс высота у картинок отзыва" />
+    <option name="LAST_COMMIT_MESSAGE" value="Фикс высота у картинок отзыва" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1583158256807">
+    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1583225152982">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583158256807" />
+    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583225152982" />
     <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1582799736973">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1582799736973" />
-    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1583158261119">
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1583225155144">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583158261119" />
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583225155143" />
     <state x="718" y="288" width="611" height="536" key="find.popup" timestamp="1583143325893">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
