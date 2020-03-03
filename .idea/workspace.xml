@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba3feb22-022f-4b98-b627-3a7bdbce5afa" name="Default Changelist" comment="Добавил поиск в модалку, добавил поиск в футер, добавил две новые страницы. Надо заменить css и js">
-      <change afterPath="$PROJECT_DIR$/markup/pages/reviews.html" afterDir="false" />
+    <list default="true" id="ba3feb22-022f-4b98-b627-3a7bdbce5afa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/reviews.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/search-by-tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/search-by-tag.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/search-results.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/search-results.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/services.html" afterDir="false" />
@@ -69,19 +69,9 @@
       <change beforePath="$PROJECT_DIR$/dev/static/img/general/work.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/img/general/work.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/static/js/separate-js/html5shiv-3.7.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/separate-js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/temp/mocksData.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/temp/mocksData.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/vacancy-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vacancy-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/vacancy-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vacancy-single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/article/_article.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/article/_article.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/blog/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/blog/_blog.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markup/components/reviews/_reviews.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/reviews/_reviews.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/team/_team.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/team/_team.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/static/scss/entry/partials/_components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/scss/entry/partials/_components.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/static/scss/plugins-reset/_bootstrap-reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/scss/plugins-reset/_bootstrap-reset.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +96,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/markup/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -143,7 +133,8 @@
       <workItem from="1582731437413" duration="5276000" />
       <workItem from="1582750342568" duration="600000" />
       <workItem from="1582799724330" duration="14000" />
-      <workItem from="1583142714797" duration="3890000" />
+      <workItem from="1583142714797" duration="4484000" />
+      <workItem from="1583225013652" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="node modules">
       <created>1582196911506</created>
@@ -173,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582747822312</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Обновил задачи">
+      <created>1583158258992</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583158258992</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,21 +182,22 @@
     <MESSAGE value="Менюшка и заявка" />
     <MESSAGE value="Обновленные модалки" />
     <MESSAGE value="Добавил поиск в модалку, добавил поиск в футер, добавил две новые страницы. Надо заменить css и js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил поиск в модалку, добавил поиск в футер, добавил две новые страницы. Надо заменить css и js" />
+    <MESSAGE value="Обновил задачи" />
+    <option name="LAST_COMMIT_MESSAGE" value="Обновил задачи" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1582747882107">
+    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1583158256807">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1582747882107" />
+    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583158256807" />
     <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1582799736973">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1582799736973" />
-    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1582747823658">
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1583158261119">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1582747823658" />
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583158261119" />
     <state x="718" y="288" width="611" height="536" key="find.popup" timestamp="1583143325893">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>

@@ -58,6 +58,14 @@
     &__img {
         display: block;
         width: 100%;
+        height: 308px;
+        object-fit: cover;
+        object-position: center 50%;
+        font-family: 'object-fit: cover; object-position: center 50%'; // ie
+
+        @include media-breakpoint-down(md) {
+            height: 250px;
+        }
     }
 
     &__video-cover {
