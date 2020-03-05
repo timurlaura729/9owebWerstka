@@ -165,7 +165,7 @@ $(function() {
     function toggle_video_modal() {
 
         // Click on video thumbnail or link
-        $(".js-video-modal").on("click", function(e){
+        $(document).on("click",".js-video-modal", function(e){
 
             // prevent default behavior for a-tags, button tags, etc.
             e.preventDefault();

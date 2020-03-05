@@ -54,6 +54,15 @@
     &__card {
         position: relative;
         display: block;
+        overflow: hidden;
+
+        &:hover,
+        &:focus {
+
+            .blog__card-img {
+                transform: scale(1.3) rotate(4deg);
+            }
+        }
 
         &:before {
             content: '';
@@ -63,6 +72,7 @@
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
 
             @include media-breakpoint-down(md) {
                 display: none;
@@ -77,6 +87,7 @@
         object-fit: cover;
         object-position: center 50%;
         font-family: 'object-fit: cover; object-position: center 50%'; // ie
+        @include transition(3s);
 
         @include media-breakpoint-down(md) {
             height: 250px;
@@ -94,6 +105,7 @@
         justify-content: center;
         align-items: flex-start;
         @include rem('padding', 35px 50px);
+        z-index: 2;
 
         @include media-breakpoint-down(md) {
             position: static;
@@ -124,8 +136,9 @@
 
     &__card-title {
         @include rem('font-size', 24px);
+        font-weight: 300;
         color: #fff;
-        @include rem('margin', 15px 0);
+        @include rem('margin', 15px 0 20px);
 
         @include media-breakpoint-down(md) {
             color: $black;
@@ -144,12 +157,14 @@
         }
     }
 
-    &__card-category {
+    &__card-tag {
         @include rem('font-size', 12px);
         color: #fff;
         @include rem('border-radius', 32px);
         border: 1px solid #fff;
         @include rem('padding', 7px 25px);
+        display: inline-flex;
+        margin: 0 10px 10px 0;
 
         @include media-breakpoint-down(md) {
             color: $blue;

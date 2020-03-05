@@ -111,16 +111,34 @@
         }
     }
 
+    &__tags {
+
+    }
+
     &__tag {
         @include rem('font-size', 12px);
         color: #fff;
         @include rem('border-radius', 32px);
         border: 1px solid #fff;
         @include rem('padding', 7px 25px);
+        display: inline-flex;
+        margin: 0 10px 10px 0;
 
         @include media-breakpoint-down(md) {
             color: $black;
             border: 1px solid $black;
+        }
+
+        &:hover,
+        &:focus {
+            color: #000;
+            text-decoration: none;
+            background: #fff;
+
+            @include media-breakpoint-down(md) {
+                color: #fff;
+                background: $blue;
+            }
         }
     }
 
