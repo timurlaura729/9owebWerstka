@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ba3feb22-022f-4b98-b627-3a7bdbce5afa" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/builds/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/builds/reviews.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/article.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/index.html" afterDir="false" />
@@ -73,10 +72,7 @@
       <change beforePath="$PROJECT_DIR$/dev/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev/static/js/separate-js/scripts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/vacancy-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vacancy-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/vacancy-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev/vacancy-single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/article/_article.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/article/_article.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/components/blog/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/blog/_blog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/article.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/markup/pages/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/pages/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/markup/components/bottom/bottom.html" beforeDir="false" afterPath="$PROJECT_DIR$/markup/components/bottom/bottom.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/markup/static/js/separate-js/scripts.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +138,8 @@
       <workItem from="1583142714797" duration="4484000" />
       <workItem from="1583225013652" duration="1769000" />
       <workItem from="1583231653738" duration="7150000" />
-      <workItem from="1583400803039" duration="3043000" />
+      <workItem from="1583400803039" duration="5043000" />
+      <workItem from="1583490194454" duration="82000" />
     </task>
     <task id="LOCAL-00001" summary="node modules">
       <created>1582196911506</created>
@@ -193,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583253136606</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Правки 2">
+      <created>1583406449043</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1583406449043</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,21 +211,22 @@
     <MESSAGE value="Обновил задачи" />
     <MESSAGE value="Фикс высота у картинок отзыва" />
     <MESSAGE value="Правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Правки" />
+    <MESSAGE value="Правки 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правки 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1583253133709">
+    <state x="649" y="152" key="CommitChangelistDialog2" timestamp="1583406447590">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583253133709" />
-    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1583253895914">
+    <state x="649" y="152" key="CommitChangelistDialog2/0.0.2048.1112@0.0.2048.1112" timestamp="1583406447590" />
+    <state x="805" y="312" key="FileChooserDialogImpl" timestamp="1583412457493">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1583253895914" />
-    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1583406392924">
+    <state x="805" y="312" key="FileChooserDialogImpl/0.0.2048.1112@0.0.2048.1112" timestamp="1583412457493" />
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2" timestamp="1583406450078">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583406392924" />
+    <state x="617" y="290" key="Vcs.Push.Dialog.v2/0.0.2048.1112@0.0.2048.1112" timestamp="1583406450078" />
     <state x="718" y="288" width="611" height="536" key="find.popup" timestamp="1583143325893">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
